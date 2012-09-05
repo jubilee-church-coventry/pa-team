@@ -6,7 +6,7 @@ This is a repository of useful things for [Jubilee Church Coventry's](http://jub
 Current resources
 -----------------
 
-1. [Editing preaches](editing-preaches.md)
+1. Editing preaches
 
 Planned resources
 -----------------
