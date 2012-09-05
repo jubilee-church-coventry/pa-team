@@ -89,7 +89,7 @@ You can use the preview button to hear what the first few seconds of the recordi
 Compression
 -----------
 
-Next we'll run the audio through a compressor, this will will reduce the recordings 'dynamic range' which basically means that we're reducing the difference between the loudest and quietest parts. This will help people listen to the recording when there's lots of background noise, when they're listening in the car, for example.
+Next we'll run the audio through a compressor, this will will reduce the recording's 'dynamic range' which basically means that we're reducing the difference between the loudest and quietest parts. This will help people listen to the recording when there's lots of background noise, when they're listening in the car, for example.
 
 To run the compressor choose `Effect -> Compressor…` and then use the following settings:
 
