@@ -42,7 +42,7 @@ The imported audio track probably includes some audio before and after the main 
 * Guideline 1
 * Guideline 2
 
-Start by finding the position you want the final export to start from by clicking on the track to set the playback start position and pressing the play button or the space-bar. You may wish to zoom in to the audio track to allow you to more acurately position the playback position, zoom controls are in the `view` menu.
+Start by finding the position you want the final export to start from by clicking on the track to set the playback start position and pressing the play button or the space-bar. You may wish to zoom in to the audio track to allow you to more accurately position the playback position, zoom controls are in the `view` menu.
 
 When you've found the start position you want, use `Edit -> Select -> Track Start to Cursor` to select all the audio in the track up to that point, and then use `Edit -> Delete` to remove it.
 
@@ -55,7 +55,7 @@ After this stage you should have a recording that doesn't include any 'extras' b
 Normalisation
 -------------
 
-To make it easier for people to listen to the track we're going to manipulate the audio. The main thing that we're going to do is normalise the audio so that the maximum gain is zero, this ensures that week to week the recording are all roughtly the same volume when played back.
+To make it easier for people to listen to the track we're going to manipulate the audio. The main thing that we're going to do is normalise the audio so that the maximum gain is zero, this ensures that week to week the recording are all roughly the same volume when played back.
 
 To normalise the audio choose `Effect -> Normalize…` which will bring up a dialog asking giving you a few options. The following is the default and is fine:
 
@@ -76,7 +76,7 @@ Once you've selected the section of pure noise, choose `Effect -> Noise Removal�
 Now, select the entire recording (`Edit -> Select -> All`) and then choose the effect again: `Effect -> Noise Removal…` and this time use the lower portion of the dialog to apply the noise removal. This might require some trial and error with settings to remove the noise without distorting the audio that you actually want to keep, but a good baseline to start from would be:
 
 * Noise reduction (dB): _15_
-* Sensitivty (dB): _2.56_
+* Sensitivity (dB): _2.56_
 * Frequency smoothing (Hz): _400_
 * Attack/decay time (secs): _0.15_
 
@@ -102,7 +102,7 @@ To run the compressor choose `Effect -> Compressor…` and then use the followin
 Export
 ------
 
-Finally we must export the file as an MP3 suitable for distributing, do this by choosing `File -> Export…`, choose a sutiable filename, and in the 'Format' dropdown choose: _MP3 Files_, if you don't have this option, have a read through the PA Team Audacity installation guide.
+Finally we must export the file as an MP3 suitable for distributing, do this by choosing `File -> Export…`, choose a suitable filename, and in the 'Format' drop-down choose: _MP3 Files_, if you don't have this option, have a read through the PA Team Audacity installation guide.
 
 Then press the `Options` button to configure the type of MP3 file that is going to be produced, ensure the following options are selected:
 
