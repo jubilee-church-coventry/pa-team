@@ -98,6 +98,7 @@ To run the compressor choose `Effect -> Compressor…` and then use the followin
 * Make-up gain to 0dB after compressing: _Enabled_
 * Compress based on Peaks: _Disabled_
 
+[INSERT SCREENSHOT]
 
 Export
 ------
