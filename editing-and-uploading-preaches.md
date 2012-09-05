@@ -39,8 +39,11 @@ Trimming
 
 The imported audio track probably includes some audio before and after the main message that you want to remove. General guidelines for what to remove and what to keep are:
 
-* Guideline 1
-* Guideline 2
+* Remove things not directly related to the main talk, so someone else introducing them.
+* Remove general 'small talk' before the start of a talk that may be directed toward the audience at the time.
+* Generally people will introduce themselves: 'Hello, my name is Steven Jones…', this can be a good place to trim up to.
+* The talk will also generally have some sense of a logical end, this is probably a good place to start trimming up to the end.
+* At the end of a talk some speakers will pray for the gathered audience, generally this would be removed.
 
 Start by finding the position you want the final export to start from by clicking on the track to set the playback start position and pressing the play button or the space-bar. You may wish to zoom in to the audio track to allow you to more accurately position the playback position, zoom controls are in the `view` menu.
 
