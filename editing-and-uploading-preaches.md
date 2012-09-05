@@ -10,8 +10,13 @@ The basic steps that we will follow are:
 
 1. Import into editing software.
 2. Trimming.
-3. Normalisation and compression.
-4. Export.
+3. Normalisation.
+4. Noise removal.
+5. Compression.
+6. Export.
+
+After some practice this process can be completed in a few minutes.
+
 
 Prerequisites
 -------------
@@ -47,16 +52,62 @@ If there's a region of audio in the middle of the recording that you need to rem
 
 After this stage you should have a recording that doesn't include any 'extras' but stills needs some tidy up before it's ready to be distributed.
 
-Normalisation and compression
------------------------------
+Normalisation
+-------------
 
 To make it easier for people to listen to the track we're going to manipulate the audio. The main thing that we're going to do is normalise the audio so that the maximum gain is zero, this ensures that week to week the recording are all roughtly the same volume when played back.
 
 To normalise the audio choose `Effect -> Normalize…` which will bring up a dialog asking giving you a few options. The following is the default and is fine:
 
+* Remove any DC offset (center on 0.0 vertically): _Enabled_
+* Normalize maximum amplitude to: _Enabled and 0.0_
+
 [INSERT SCREENSHOT]
 
-Next we'll run the audio through a compressor, this will...
+Noise removal
+-------------
+
+Depending on the source the recording may contain a lot of background noise, that is competing with the person talking for the listeners attention.
+
+Audacity has a nice plugin that will help you remove the noise, start by finding a section of the recording that _should_ otherwise be quiet, e.g. a long pause between the speaker saying one thing and another. Select this section of the recording so it's highlighted (click and drag) and play it over a few times to make sure it's just noise, avoid using sections where the speaker can be heard making 'background' noises, e.g. having a sip of water or changing pages in notes.
+
+Once you've selected the section of pure noise, choose `Effect -> Noise Removal…` and press the step 1 button: `Get Noise Profile`. Audacity will sample the section you've selected to work out what you think is noise.
+
+Now, select the entire recording (`Edit -> Select -> All`) and then choose the effect again: `Effect -> Noise Removal…` and this time use the lower portion of the dialog to apply the noise removal. This might require some trial and error with settings to remove the noise without distorting the audio that you actually want to keep, but a good baseline to start from would be:
+
+* Noise reduction (dB): _15_
+* Sensitivty (dB): _2.56_
+* Frequency smoothing (Hz): _400_
+* Attack/decay time (secs): _0.15_
+
+You can use the preview button to hear what the first few seconds of the recording would sound like with you current settings applied before you've applied them to your entire recording, which can take a little while be computed and applied.
+
+
+Compression
+-----------
+
+Next we'll run the audio through a compressor, this will will reduce the recordings 'dynamic range' which basically means that we're reducing the difference between the loudest and quietest parts. This will help people listen to the recording when there's lots of background noise, when they're listening in the car, for example.
+
+To run the compressor choose `Effect -> Compressor…` and then use the following settings:
+
+* Threshold: _-30 dB_
+* Noise Floor: _-55 dB_
+* Ratio: _3:1_
+* Attack Time: _0.2 secs_
+* Decay Time: _1.0 secs_
+* Make-up gain to 0dB after compressing: _Enabled_
+* Compress based on Peaks: _Disabled_
+
 
 Export
 ------
+
+Finally we must export the file as an MP3 suitable for distributing, do this by choosing `File -> Export…`, choose a sutiable filename, and in the 'Format' dropdown choose: _MP3 Files_, if you don't have this option, have a read through the PA Team Audacity installation guide.
+
+Then press the `Options` button to configure the type of MP3 file that is going to be produced, ensure the following options are selected:
+
+* Bit Rate Mode: _Constant_
+* Quality: _80 kbps_
+* Channel Mode: _Joint Stereo_
+
+Press `Save` and your recording will be exported ready for distribution.
