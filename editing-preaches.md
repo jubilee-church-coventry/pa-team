@@ -114,4 +114,11 @@ Then press the `Options` button to configure the type of MP3 file that is going 
 * Quality: _80 kbps_
 * Channel Mode: _Joint Stereo_
 
-Press `Save` and your recording will be exported ready for distribution.
+Press `Save` and you will be asked to fill in some extra metadata. You should fill in:
+
+* Artist name: [The speakers name]
+* Album title: Jubilee Church Podcast
+* Year: [Year of recording]
+* Genre: Podcast
+
+Leave the others blank and press OK and the file will be exported.
