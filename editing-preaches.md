@@ -26,7 +26,7 @@ You will need some audio editing software. This guide will assume that you are u
 Import
 ------
 
-Begin by starting a new project in Audacity: `File -> New`, and then immediately save this empty project: `File -> Save Project As…`. Use a suitable filename, ideally try to include the date, and the person talking on the track, so something like: `2012-09-17-Steven-Jones.aup` would be suitable.
+Begin by starting a new project in Audacity: `File -> New`, and then immediately save this empty project: `File -> Save Project As…`. Use a suitable filename, ideally try to include the date, and the person talking on the track, so something like: `2012-09-17-steven-jones.aup` would be suitable. IMPORTANT: due to the limitations of the website, this filename *must* be lowercase letters only.
 
 With this clean, empty project you can import the recorded file, you can either drag and drop the file onto your Audacity project, or choose `File -> Import -> Audio` and find your file. After import your project should look something like this.
 
@@ -106,7 +106,7 @@ To run the compressor choose `Effect -> Compressor…` and then use the followin
 Export
 ------
 
-Finally we must export the file as an MP3 suitable for distributing, do this by choosing `File -> Export…`, choose a suitable filename, and in the 'Format' drop-down choose: _MP3 Files_, if you don't have this option, have a read through the PA Team Audacity installation guide.
+Finally we must export the file as an MP3 suitable for distributing, do this by choosing `File -> Export…`, choose a suitable filename (*must* be lowercase letters only), and in the 'Format' drop-down choose: _MP3 Files_, if you don't have this option, have a read through the PA Team Audacity installation guide. The actual filename you use doesn't actually matter as it'll get renamed automatically by the website.
 
 Then press the `Options` button to configure the type of MP3 file that is going to be produced, ensure the following options are selected:
 
